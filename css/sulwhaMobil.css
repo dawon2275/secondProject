@@ -1,0 +1,204 @@
+/* 반응형 */
+@media screen and (max-width:640px) {
+    body {max-width: 100%; }
+    header .inner {
+        position: relative;
+        max-width: 100%;
+        height: 9.375em;
+        margin: 1.875em 0 0 0 ;
+    }
+    h2 {font-size: 2.5rem; text-align: center;  z-index: 150;}
+    header .inner .lang > a {padding-left: 0.625em;}
+    header .gnb > ul,
+    header .shop{display: none;}
+    header .inner .logo img{ 
+        display: block;
+        width: 270px;
+        text-align: center;
+    }
+   /*  header .mySwiper {width: 640px; height: 400px;} */
+    
+    header .inner .mobile {
+        display: block; 
+        position: absolute; 
+        top: 0; right: 10px; 
+        font-size: 30px;
+    }
+    .contents ,section 
+    {width: 100%; margin-left: 10px;}
+
+     .swiper-slide1 img {
+        background-image: url(../img/moBg1.jpg) no-repeat contain;
+        max-width: 100%; height: 800px;
+        z-index: 100;
+    }
+
+    .Swiper2 {margin-top: -500px;}
+    
+/* ================================box1==========================  */
+.contents> h2 { 
+    position: absolute;
+    top:0; left: 0;
+    z-index: 50;
+}
+.contents .swiper.Swiper2 {
+    margin-top: 70px;
+    overflow: hidden;
+}
+.contents .box1 { margin-top: -150px;}
+.contents .swiper.Swiper2 .swiper-wrapper {height: 900px;}
+.contents .swiper.Swiper2 {width: 100vw;}
+.contents .swiper.Swiper2 .swiper-slide2 {width: 500px; height: 830px;}
+.contents .swiper.Swiper2 .swiper-slide2 img {width: 100%; }
+.contents .box1 .title { 
+    margin-top: -500px; 
+    height: 200px;
+    padding-top: 20px;
+}
+.contents .swiper.Swiper2 .swiper-slide{border: none;}
+.contents .box2 .title a {border: none;}
+.contents .box1 .title p {font-size: 35px; margin-top: 30px;}
+
+/*============================= box2 =========================*/
+    .contents .box2 { 
+        position: relative; 
+        height: 650px; width: 100%;
+        margin-top: -150px;
+    }
+    .contents .box2 img {display: none;}
+    .contents .box2 figure img { 
+        display: block; 
+        width: 100%;
+    }
+    .contents .box2 .title { 
+        position: absolute; 
+        bottom: -10%; left: 13%; 
+        text-align: left;
+    }
+    .contents .box2 .title .big {
+        font-size: 40px; 
+        margin-bottom: 0.313em; 
+        font-weight: 500;
+    }
+    .contents .box2 .title .small {
+        font-size:30px ; 
+        color: rgba(0, 0, 0, 0.4);
+        margin-bottom: 0.813em;
+        }
+    .contents .box2 .title a {
+        display: inline-block; 
+        padding: 20px 30px ; 
+        border: 1px solid #000; 
+        font-size: 26px;
+    
+    }
+    .contents .box2 .title a:hover {
+        background: #000; color: #fff; 
+        transition: all 0.7s;
+    }
+
+/* ============================box3====================== */
+
+    .contents .box3 {
+        position: relative; 
+        width: 600px; 
+        float: none; 
+        height: auto; 
+        margin-bottom: 1000px;
+     }
+    .contents .box3 .cont2 {
+        position: absolute; 
+        top:140px; left: 0;
+    }
+    .contents .box3 .cont2 img { padding: 0; width: 620px;}
+    .contents .box3 .cont1 { 
+        position: absolute; 
+        top: 710px; left: 0; 
+        width: 295px;
+    }
+    .contents .box3 .cont1:last-child {margin-left: 315px;}
+    .contents .box3 .cont1 img { width: 305px; }
+    .contents .box3 .cont1 .title {width: 305px; height: 200px; margin-top: -10px;}
+    /* .contents .box3 .cont1 .title:first-child {margin-left: 5px;} */
+    .contents .box3 .cont2 .title .big {font-size: 35px;}
+    .contents .box3 .title .big {font-size: 30px;}
+    .contents .box3 .title .small {font-size: 22px; }
+    .contents .box3 .title .small
+/* ==================================section================================ */
+    section{
+        float: none; 
+        width: 100%; 
+        margin: 0;
+    }
+    section div {
+        text-align: center; 
+        width: 100%; 
+        margin: 200px 0 80px 0 ;
+    } 
+    section .right {margin: 30px 0 0 -20px; }
+    section .left {margin: 230px 0 0 -20px;}
+    section div .title {margin-top: 0;}
+    section div .title .text {font-size: 40px;}
+    section div .title span {font-size: 25px;}
+    
+    section img {width: 100%;}
+
+/* =============================review========================= */
+
+.review {width: 100%; text-align: center; margin: 100px 0;}
+.review .Swiper3 .swiper-button-next {
+    right: 20px;
+    transform: rotate(90deg);
+    color: #000;
+  }
+.review .Swiper3 .swiper-button-prev {
+    left: 20px;
+    transform: rotate(90deg);
+    color: #000;
+  }
+.Swiper3 {height: 1000px; width: 100%;}
+.Swiper3 .swiper-slide { 
+      width: 600px; 
+      height: auto;
+      margin-bottom: 150px;
+      text-align: center;
+      background: #fff;
+    }
+.review .Swiper3 .swiper-slide .bg img{width: 350px; height: 350px;}
+.Swiper3 .review_text{ 
+    display: none;
+    border: 2px solid #ccc; 
+    width: 350px; height: 349px;
+    position: absolute;
+    top: -51px; left: 123px; bottom: 0;
+    background: rgba(226, 226, 226, 0.5);
+    
+}
+.Swiper3 .review_text img {  
+    display: none;
+    width: 100px; 
+    position: absolute;
+    top: 50%; left: 50%;
+    transform: translate(-50%, -50%);    
+}
+.Swiper3 .review_text a{display: block; padding: 100%;}
+.Swiper3 .swiper-slide:hover .review_text,
+.Swiper3 .review_text img {display: block;}
+
+
+/* ==========================footer======================== */
+footer {max-width: 640px; overflow: hidden;}
+footer .bottom .list{width: 100%; position: relative;}
+footer .bottom .list .right { 
+    position: absolute; 
+    top: 0; left: 50%;
+    transform: translateX(-50%);
+    width: 100%;
+    
+}
+footer .bottom .list .right li {float: left; width:35px;}
+footer .bottom .list .right li a {display: block;}
+footer .bottom .list .right li:first-child img {display: none;}
+
+
+}

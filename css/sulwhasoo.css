@@ -1,0 +1,379 @@
+@charset "utf-8";
+@import url(fonts.css);
+
+html {font-size: 16px; }
+body { font:400 16px "Noto Sans KR", sans-serif; position: relative; }
+h2 {font-size: 2.188rem; margin-bottom: 0.938em; font-weight: 500;}
+
+#wrap {
+    max-width: 1903px;
+    overflow: hidden;
+}
+/* main swiper */
+.mySwiper {
+    position: absolute;
+    top: -250px;
+}
+.mySwiper { 
+    position: relative;
+}
+header .swiper-slide {}
+.mySwiper .button a{
+    display: block;
+    color: #fff;
+    background:rgba(226, 226, 226, 0.3);
+    padding: 1.250em;
+}
+.swiper-slide1 .title {
+    color: #fff;
+    position: absolute;
+    bottom:9.000em ; left: 4.375em;
+    z-index: 100;
+}
+.swiper-slide1 img { height: 50.000em; }
+.swiper-slide1 { margin-top:-3.125em; }
+.swiper.mySwiper .title .stext {margin-bottom: 3.125em;}
+.swiper.mySwiper .title .btext {font-size: 2.188rem; font-weight: 600;}
+
+
+header {
+    position: relative;
+    height: 9.375em;
+    padding: 1.875em;
+    z-index: 50;
+}
+header .inner {
+    max-width: 100%;
+    height: 9.375em;
+    padding: 0.625em;
+    color: #fff;
+}
+#section { 
+    position: absolute;
+    top: 20px; left: 400px;
+    width: 100px; height: 20px;
+    border: none;
+    background: none;
+    color: #fff;
+    font-size: 15px;
+}
+#section option {
+    width: 200px;
+    border: #000;
+}
+header .gnbBg {height: 300vh; /* background: #fff; */ display: none; z-index: 1;}
+/* 언어 선택  */
+/* header .lang img {padding-left: 0.625em;}
+header .lang li a{ font-size: 0.938rem; padding: 0.625em; color: #fff; box-sizing: border-box; display: none;}
+header .lang li:hover {background: #b4b4b4;} */
+
+header .inner .logo {margin-top: 100px;}
+header .inner .logo img { 
+    background: url(../img/sulwhasoo_white_logo.png) no-repeat cover/center;
+    position: absolute;
+    top: 30px; left: 50%;
+    transform: translateX(-50%);
+    width: 180px;
+    display: block;
+
+}
+header .inner .shop {
+    position: absolute;
+    top: 20px; right: 380px;
+    text-align: center;
+}
+header .inner .shop a {
+    display: inline-block;
+    position: relative;
+    padding: 0 14px;
+    font-size: 15px;
+}
+header .inner .shop a img {filter: invert(98%) sepia(2%) saturate(0%) hue-rotate(217deg) brightness(102%) contrast(101%);}
+header .inner .shop a:after {
+    position: absolute;
+    top: 8px; right: 0;
+    width: 1px; height: 10px;
+    display: inline-block;
+    content: '';
+    background: #ccc;
+}
+header .inner .shop a:last-child { text-decoration: none;}
+header .inner .shop img {width: 20px; display: inline-block;}
+
+/* gnb */
+header .inner .gnb { 
+    position: absolute;
+    top: 55%; left: 50%;
+    transform: translate(-50%);
+    width: 1000px;
+    text-align: center;
+}
+header .inner .mobile {display: none;}
+header .inner .gnb a {
+    display: block;
+    text-align: center;
+    height:30px;
+}
+header .gnb > ul > li { 
+    position: relative;
+    float: left;
+    width: calc(100%/7);
+    font-size: 1.063em;
+    transition: all .4s;
+
+}
+header .gnb > ul > li:hover::after {
+    content: '';
+    width: 142px; height: 3px;
+    background: #000;
+    position: absolute;
+    bottom: 0; left: 50%;
+    transform: translateX(-50%);
+
+}
+/* header .gnb ul ul {display: none;} */
+.gnbBg {
+    position: absolute;
+    top: 140px; left: 0; right: 0; 
+    background: #fff; 
+    display: none; 
+    transition: all 0.2s;
+}
+
+.gnbBg.on {height:110px}
+
+.gnb .depth1 {
+    position: absolute;
+    width: 100vW; height: 50px;
+    top: 50px; left: 0; right:0;
+    text-align: center;
+    display: none;
+    margin-left: -60px;
+}
+.gnb .depth1 li { 
+    float: left; 
+    width: 100px;
+    height: 60px;
+}
+.gnb .depth1 li a {
+    display: block;
+    width: 100%;
+}
+.gnb .second { margin-left: -70px;}
+.gnb .second > li {
+    width: 120px;
+}
+.gnb .second > li { margin-left: 20px;}
+
+
+/* //gnb */
+
+/* contents */
+/* box1 - swiper2 */
+.contents { 
+   position: relative;
+   margin:6.250em;
+}
+.contents> h2 { 
+    font-size: 3.125rem;
+    position: absolute;
+    top: 25%; left: 0;
+    z-index: 50;
+}
+.contents .swiper.Swiper2 .swiper-wrapper {padding-bottom: 50px;}
+.contents .swiper.Swiper2 {
+    width: 100%;
+    background: #fff;
+  }
+.contents .swiper.Swiper2 .swiper-slide {
+    overflow: hidden;
+    position: relative;
+    text-align: center;
+    font-size: 18px;
+    background: #d5d5d5;
+    height: 600px;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+
+
+}
+.contents .swiper.Swiper2 .swiper-slide img {
+    position: absolute;
+    top: -40px; left: 0;
+    width: 100%;
+    
+}
+.contents .swiper .swiper-pagination {
+    position: absolute;
+    bottom: 0
+}
+.contents .mobox1 {display: none;} 
+
+.contents .box1 {position: relative; margin-top: -100px;}
+.contents .box1 .title { 
+    position: absolute;
+    bottom: 0; left: 0;
+    width: 100%;
+    padding: 30px 0;
+    text-align: center;
+    background: #fff;
+}
+.contents .box1 .title p {font-weight: 400; font-size:  21px; }
+.contents .box1 .title .text {font-size:1.25rem; color: rgba(0, 0, 0, 0.4);}
+.contents .box1 .title .price {
+    margin-top: 1.250em; 
+    font-weight: lighter; 
+    font-size:16px
+}
+
+/* box2 */
+.contents > div {margin-bottom: 300px;}
+.contents .box2 {position: relative; width: 100%; height: auto; }
+.contents .box2 img { width: 100%;}
+.contents .box2 figure > img{display: none;}
+.contents .box2 .title { 
+    position: absolute; 
+    bottom: 13%; left: 13%; 
+    text-align: left;
+}
+.contents .box2 .title .big {
+    font-size: 2.188rem; 
+    margin-bottom: 0.313em; 
+    font-weight: 500;
+}
+.contents .box2 .title .small {
+    font-size:1.063rem ; 
+    color: rgba(0, 0, 0, 0.4);
+     margin-bottom: 1.125em;
+    }
+.contents .box2 .title a {
+    display: inline-block; 
+    padding: 0.750em 1.063em ; 
+    border: 1px solid #000; 
+}
+.contents .box2 .title a:hover {
+    background: #000; color: #fff; 
+    transition: all 0.7s;
+}
+
+/* box3 */
+.contents .box3 .cont  { width: 100%;/*  margin-left: 130px; */}
+.contents .box3 .cont > div {float: left; text-align: center;}
+.contents .box3 .cont1 .title { 
+    height: 126px; 
+    background: #efefef; 
+    margin-top: -5px;
+}
+.contents .box3 .title .big {
+    font-size: 1.188rem; 
+    margin-bottom: 0.313em; 
+    font-weight: 500;
+}
+.contents .box3 .title .small {font-size:0.938rem ; color: rgba(0, 0, 0, 0.4)}
+.contents .box3 .cont1 img{width: 430px;}
+.contents .box3 .cont2 {position: relative;  }
+.contents .box3 .cont2 img {width: 770px; height: 556px; padding: 0 35px; }
+.contents .box3 .cont2 .title {
+    text-align: left; 
+    position: absolute; 
+    top: 70%; left: 10%;
+} 
+.contents .box3 .cont2 .title .big {font-size: 1.375rem;}
+
+/* section */
+section {margin:auto 14.375em;}
+
+section > div {float: left; width: 714px; margin: 0;}
+section .right { margin-left: 15px;}
+section > div .title { text-align: center;}
+section > div .title .text {
+    font-size: 1.875rem; 
+    font-weight: 500; 
+    margin: 0.938em 0;
+}
+section > div a > span {
+    display:inline-block; 
+    padding: 0.500em 1.875em; 
+    border: 1px solid #000;
+}
+section > div a > span:hover {
+    background: #000; 
+    color: #fff; 
+    transition: all 0.6s;
+}
+
+/* review */
+.review {margin:18.750em 14.375em;}
+/* review-swiper3 */
+.Swiper3 {height: 300px;}
+.Swiper3 .swiper-slide { 
+    width: 300px; 
+    text-align: center;
+    font-size: 18px;
+    background: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+.Swiper3 a img{width: 300px; height: auto; display: block; transition: all .6s;}
+.Swiper3 .review_text{ 
+    display: none;
+    border: 2px solid #ccc; 
+    width: 299px; 
+    position: absolute;
+    top: 0; left: 29px; bottom: 0;
+    background: rgba(226, 226, 226, 0.5);
+    
+}
+
+.Swiper3 .review_text img {  
+    display: none;
+    width: 100px; 
+    position: absolute;
+    top: 50%; left: 50%;
+    transform: translate(-50%, -50%);    
+}
+.Swiper3 .swiper-slide {transition: all .8s;}
+.Swiper3 .review_text a{display: block; padding: 100%; }
+.Swiper3 .swiper-slide:hover .review_text,
+.Swiper3 .review_text img {display: block;}
+
+
+/* footer */
+footer {margin: 0;}
+footer .bottom { margin: 0 auto; color: #696969; }
+footer .bottom .gnb {border-bottom: 1px solid #b4b4b4;border-top: 1px solid #ccc;}
+footer .bottom .list { 
+    width: 1400px;
+    margin: 30px auto; 
+    position: relative; 
+    text-align: center; 
+    margin-bottom: 20px;
+}
+/* left */
+footer {color: #ccc;}
+footer .left { float: left; width: 80%;}
+footer .left li {float: left;}
+footer .left li a {
+    display: block;
+    position: relative;
+    padding: 15px;
+}
+footer .left li a:after {
+    position: absolute;
+    top: 50%; right: 0;
+    transform: translateY(-50%);
+    content: '';
+    width: 1px; height: 18px;
+    background: #ccc;
+    
+}
+/* right */
+footer .right { float: right; width: 20%; position: absolute; top: 0; right: 20%;}
+footer .right li {float: left; margin-left: 15px; }
+footer .right li a { display: block; }
+footer .right li img {width: 40px;}
+footer .title {margin: 25px auto; width: 1400px; }
+
+
+
