@@ -7,7 +7,7 @@
         height: 9.375em;
         margin: 1.875em 0 0 0 ;
     }
-    h2 {font-size: 1.751rem; text-align: center;  z-index: 150;}
+    h2 {font-size: 1.201rem; text-align: center;  z-index: 150;}
     header .inner .lang > a {padding-left: 0.625em;}
     header .gnb > ul,
     header .shop{display: none;}
@@ -80,16 +80,17 @@
 .contents .box1 { margin-top: -150px;}
 .swiper-wrapper2 {width: 100%; height: 100vh;}
 .Swiper2 {width: 100vw; height: 100%;}
-.Swiper2 .swiper-slide2 {width: 500px; height: 830px;}
-.Swiper2 .swiper-slide2 img {width: 100%; height: 500px ; }
+.Swiper2 .swiper-slide2 {width: 500px; height: 530px;}
+.Swiper2 .swiper-slide2 img {width: 100%; height: 300px ; }
 .contents .box1 .title { 
-    margin-top: -400px; 
+    margin-top: -400px;  
     height: 150px;
     padding-top: 20px;
 }
-.contents .swiper.Swiper2 .swiper-slide{border: none;  height: 700px;}
+.contents .swiper.Swiper2 .swiper-slide{border: none;  height: 500px;}
 .contents .box2 .title a {border: none;}
-.contents .box1 .title p {font-size: 25px; margin-top: 30px;}
+.contents .box1 .title p {font-size: 18px; margin-top: 30px;}
+.contents .box1 .title .text{font-size: 14px;}
 
 /*============================= box2 =========================*/
     .contents .box2 { 
@@ -108,53 +109,55 @@
         text-align: left;
     }
     .contents .box2 .title .big {
-        font-size: 30px; 
+        font-size: 20px; 
         margin-bottom: 0.313em; 
         font-weight: 500;
     }
     .contents .box2 .title .small {
-        font-size:20px ; 
+        font-size:15px ; 
         color: rgba(0, 0, 0, 0.4);
         margin-bottom: 0.813em;
         }
     .contents .box2 .title a {
         display: inline-block; 
-        padding: 10px 20px ; 
-        border: 1px solid #000; 
-        font-size: 20px;
+        padding: 5px 10px ; 
+        color: rgba(0, 0, 0, 0.4);
+        border: 1px solid rgba(0, 0, 0, 0.4); 
+        font-size: 13px;
     
     }
     .contents .box2 .title a:hover {
-        background: #000; color: #fff; 
-        transition: all 0.7s;
+        background: rgba(0, 0, 0, 0.4); color: #fff; 
+        transition: all 0.4s;
     }
 
 /* ============================box3====================== */
 
     .contents .box3 {
         width: 100%;
-        height: 110vh;
+        height: 100vh;
         position: relative; 
         float: none; 
         margin-top: 150px;
      }
+     .contents .box3 .cont > div {float: none;}
     .contents .box3 .cont2 {
         position: absolute; 
         top:140px; left: 0;
     }
-    .contents .box3 .cont2 img { padding: 0; width: 100%;}
+    .contents .box3 .cont2 img { padding: 0; width: 100%; height: 330px;}
     .contents .box3 .cont1 { 
         position: absolute; 
-        top: 710px; left: 0; 
-        width: 295px;
+        top: 510px; left: 0; 
+        width: 100%;
     }
-    .contents .box3 .cont1:last-child {margin-left: 315px;}
-    .contents .box3 .cont1 img { width: 305px; }
-    .contents .box3 .cont1 .title {width: 305px; height: 200px; margin-top: -10px;}
+    .contents .box3 .cont1:last-child {margin-top: 335px;}
+    .contents .box3 .cont1 img { width: 100%; height: 230px;}
+    .contents .box3 .cont1 .title {width: 100%; height: 100px; margin-top: -10px;}
     /* .contents .box3 .cont1 .title:first-child {margin-left: 5px;} */
-    .contents .box3 .cont2 .title .big {font-size: 35px;}
-    .contents .box3 .title .big {font-size: 30px;}
-    .contents .box3 .title .small {font-size: 22px; }
+    .contents .box3 .cont2 .title .big {font-size: 20px;}
+    .contents .box3 .title .big {font-size: 15px;}
+    .contents .box3 .title .small {font-size: 12px; }
     .contents .box3 .title .small
 /* ==================================section================================ */
     section{
@@ -167,11 +170,12 @@
         width: 100%; 
         margin: 0 0 80px 0 ;
     } 
-    section .right {margin: 30px 0 0 0}
+    section .right {margin:0}
     section .left {margin: 230px 0 0 0 }
     section div .title {margin-top: 0;}
-    section div .title .text {font-size: 30px;}
-    section div .title span {font-size: 20px;}
+    section div .title .text {font-size: 15px;}
+    section > div .title .text {font-weight: lighter;}
+    section div .title span {font-size: 10px;}
     
     section img {width: 100%;}
 
@@ -191,28 +195,25 @@
     color: #000;
   }
 .Swiper3 .swiper-slide { 
-      width: 600px; 
-      height: auto;
-      margin-bottom: 150px;
-      text-align: center;
+      width: 100%; 
+      height: 100vh;
+      margin-bottom: 50px;
       background: #fff;
     }
-.review .Swiper3 .swiper-slide .bg img{width: 350px; height: 350px;}
+.review .Swiper3 .swiper-slide .bg img{width: 100%; height: 300px;}
 .Swiper3 .review_text{ 
     display: none;
-    border: 2px solid #ccc; 
-    width: 350px; height: 349px;
-    position: absolute;
-    top: -51px; left: 123px; bottom: 0;
+    border: 1px solid #ccc;
+    width: 248px;
+    height: 309px;
     background: rgba(226, 226, 226, 0.5);
-    
+    position: absolute;
+    bottom: 73px;
 }
+
 .Swiper3 .review_text img {  
     display: none;
-    width: 100px; 
-    position: absolute;
-    top: 50%; left: 50%;
-    transform: translate(-50%, -50%);    
+    width: 100px;    
 }
 .Swiper3 .review_text a{display: block; padding: 100%;}
 .Swiper3 .swiper-slide:hover .review_text,
@@ -222,15 +223,22 @@
 /* ==========================footer======================== */
 footer {width: 100%; overflow: hidden;}
 footer .bottom .list{width: 100%; position: relative; }
-footer .bottom .list .right { 
-    position: absolute; 
-    top: 0; right: -60%;
+
+footer .left {
+    float: none;
     width: 100%;
-    
+    margin-top: 60px;
 }
-footer .bottom .list .right li {float: left; width:35px;}
+footer .right {
+    float: right;
+    width: 100%;
+    position: absolute;
+    top: -50px;
+    left: 10%;
+}
 footer .bottom .list .right li a {display: block;}
 footer .bottom .list .right li:first-child img {display: none;}
+footer .title {width: 100%;}
 
 
 }
