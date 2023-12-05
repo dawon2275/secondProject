@@ -38,8 +38,8 @@ $(function() {
 
 
     $('.subYes').on('mouseover', function() {
-        $(this).children('.depth1').stop().fadeIn(50)
-        $(this).siblings('li').removeClass('on')        
+        $(this).children('.depth1').stop().fadeIn(700)
+        $(this).siblings('li').removeClass('on')            
     });
 
     $('.subYes').on('mouseleave', function() {

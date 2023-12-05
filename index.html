@@ -107,28 +107,28 @@
         <div class="swiper mySwiper">
             <div class="swiper-wrapper swiper-wrapper1">
                 <div class="swiper-slide swiper-slide1">
-                    <img src="img/20230519_final_rose-global-ambassador-2nd-cover_KV_banner_pc.jpg" alt="">
+                    
                     <div class="title">
                         <p class="stext">SULWHASOO FLAGSHIP STORE</p>
                         <p class="btext">ROSÉ in BUKCHON</p>
                     </div>
                 </div>
-                <div class="swiper-slide swiper-slide1">
-                    <img src="img/20230419_final_BRAND-CAMPAIGN-PAGE_main_KV_pc.jpg" alt="">
+                <div class="swiper-slide swiper-slide22">
+        
                     <div class="title">
                         <p class="stext">NEW BRAND FILM</p>
                         <p class="btext">인삼, 아름다움 그리고 설화수</p>
                     </div>
                 </div>
-                <div class="swiper-slide swiper-slide1">
-                    <img src="img/20230525_final_tilda-swinton_KV_banner_pc.jpg" alt="">
+                <div class="swiper-slide swiper-slide3">
+                    
                     <div class="title">
                         <p class="stext">NEW GLOBAL AMBASSADOR</p>
                         <p class="btext">설화수, 그리고 TILDA</p>
                     </div>
                 </div>
-                <div class="swiper-slide swiper-slide1">
-                    <img src="img/20220301_final_FIRST-CARE-ACTIVATING-SERUM-VI_main_KV_pc.jpg" alt="">
+                <div class="swiper-slide swiper-slide4">
+                   
                     <div class="title">
                         <p class="stext">SULWHASOO FIRST CARE ACTIVATING SERUM VI</p>
                         <p class="btext">윤조에센스 6세대</p>
@@ -150,7 +150,7 @@
                     <h2>설화수 추천</h2>
 <!-- box1 -Swiper -->
                     <div class="swiper Swiper2">
-                        <div class="swiper-wrapper">
+                        <div class="swiper-wrapper swiper-wrapper2">
                             <div class="swiper-slide swiper-slide2">
                                <img src="img/sul01.jpg" alt="">
                                 <div class="title">
@@ -530,6 +530,11 @@
         let swiper2 = new Swiper(".Swiper2", {
         slidesPerView: 3,
         spaceBetween: 10,
+        /* autoplay: {
+        delay: 2500,
+        disableOnInteraction: false,
+      },
+      loop:true, */
         navigation: {
             nextEl: ".swiper-button-next",
             prevEl: ".swiper-button-prev",
@@ -541,7 +546,7 @@
         
         breakpoints: {
         
-        500: {
+        300: {
           slidesPerView: 1,  //브라우저가 768보다 클 때
           spaceBetween: 40,
         },

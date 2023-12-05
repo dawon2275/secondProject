@@ -11,27 +11,54 @@ h2 {font-size: 2.188rem; margin-bottom: 0.938em; font-weight: 500;}
 }
 /* main swiper */
 .mySwiper {
-    position: absolute;
+    width: 100%; height: 50.000em;
+    position: relative;
     top: -250px;
 }
-.mySwiper { 
+/* .mySwiper { 
     position: relative;
-}
-header .swiper-slide {}
+} */
 .mySwiper .button a{
     display: block;
     color: #fff;
     background:rgba(226, 226, 226, 0.3);
     padding: 1.250em;
 }
-.swiper-slide1 .title {
+.swiper-slide1 .title,
+.swiper-slide22 .title,
+.swiper-slide3 .title,
+.swiper-slide4 .title
+ {
     color: #fff;
     position: absolute;
     bottom:9.000em ; left: 4.375em;
     z-index: 100;
 }
-.swiper-slide1 img { height: 50.000em; }
-.swiper-slide1 { margin-top:-3.125em; }
+
+.swiper-slide1 {
+    background: url(../img/sulBg1.jpg) no-repeat;
+    background-size: 100% 50.000em;
+
+}
+.swiper-slide22 {
+    background: url(../img/sulBg2.jpg) no-repeat;
+    background-size: 100% 50.000em;
+}
+.swiper-slide3 {
+    background: url(../img/sulBg3.jpg) no-repeat;
+    background-size: 100% 50.000em;
+
+}
+.swiper-slide4 {
+    background: url(../img/sulBg4.jpg) no-repeat;
+    background-size: 100% 50.000em;
+
+}
+.swiper-slide1,
+.swiper-slide22,
+.swiper-slide3,
+.swiper-slide4
+ { margin-top:-3.125em; }
 .swiper.mySwiper .title .stext {margin-bottom: 3.125em;}
 .swiper.mySwiper .title .btext {font-size: 2.188rem; font-weight: 600;}
 
@@ -110,6 +137,7 @@ header .inner .gnb {
 }
 header .inner .mobile {display: none;}
 header .inner .gnb a {
+    transition: all .4s;
     display: block;
     text-align: center;
     height:30px;
@@ -192,14 +220,13 @@ header .gnb > ul > li:hover::after {
     font-size: 18px;
     background: #d5d5d5;
     height: 600px;
-    border: 1px solid #ccc;
     box-sizing: border-box;
 
 
 }
-.contents .swiper.Swiper2 .swiper-slide img {
+.swiper-slide2 img {
     position: absolute;
-    top: -40px; left: 0;
+    top: 0; left: 0; bottom: 0;
     width: 100%;
     
 }
@@ -209,7 +236,7 @@ header .gnb > ul > li:hover::after {
 }
 .contents .mobox1 {display: none;} 
 
-.contents .box1 {position: relative; margin-top: -100px;}
+.contents .box1 {position: relative; margin-top: -12.5em;}
 .contents .box1 .title { 
     position: absolute;
     bottom: 0; left: 0;

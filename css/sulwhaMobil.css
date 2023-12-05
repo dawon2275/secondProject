@@ -1,69 +1,101 @@
 /* 반응형 */
-@media screen and (max-width:640px) {
-    body {max-width: 100%; }
+@media screen and (min-width:320px) and (max-width:640px) {
+    body {max-width: 100%; height: 100vh; }
     header .inner {
         position: relative;
         max-width: 100%;
         height: 9.375em;
         margin: 1.875em 0 0 0 ;
     }
-    h2 {font-size: 2.5rem; text-align: center;  z-index: 150;}
+    h2 {font-size: 1.751rem; text-align: center;  z-index: 150;}
     header .inner .lang > a {padding-left: 0.625em;}
     header .gnb > ul,
     header .shop{display: none;}
     header .inner .logo img{ 
+        margin-top: -30px;
         display: block;
-        width: 270px;
+        width: 9.125em;
         text-align: center;
     }
-   /*  header .mySwiper {width: 640px; height: 400px;} */
-    
+    .swiper-slide1 .title,
+    .swiper-slide22 .title,
+    .swiper-slide3 .title,
+    .swiper-slide4 .title{
+    width: 100%;
+    color: #fff;
+    position: absolute;
+    bottom:0.625em; left: 5%;
+
+    z-index: 10;
+    }
     header .inner .mobile {
         display: block; 
         position: absolute; 
-        top: 0; right: 10px; 
-        font-size: 30px;
+        top: -40px; right: -10px; 
+        font-size: 25px;
     }
-    .contents ,section 
-    {width: 100%; margin-left: 10px;}
-
-     .swiper-slide1 img {
-        background-image: url(../img/moBg1.jpg) no-repeat contain;
-        max-width: 100%; height: 800px;
-        z-index: 100;
+    .contents ,section {width: 100%; margin-left: 0;}
+    .mySwiper {
+        width: 100%; height: 37.15em;
+        position: relative;
+        top: -250px;
     }
-
+    .swiper-slide1 {
+        background: url(../img/moBg1.jpg) no-repeat;
+        background-size: 100% 37.15em;
+    }
+    .swiper-slide22 {
+        background: url(../img/moBg2.jpg) no-repeat;
+        background-size: 100% 37.15em;
+    }
+    .swiper-slide3 {
+        background: url(../img/moBg3.jpg) no-repeat;
+        background-size: 100% 37.15em;
+    }
+    .swiper-slide4 {
+        background: url(../img/moBg4.jpg) no-repeat;
+        background-size: 100% 37.15em;
+    }
+    .swiper-slide1,
+    .swiper-slide22,
+    .swiper-slide3,
+    .swiper-slide4
+     { margin-top:-3.125em; }
+    .swiper.mySwiper .title .stext {margin-bottom: 1.00em;}
+    .swiper.mySwiper .title .btext {
+        width: 100%;
+        font-size: 1.551rem; 
+        font-weight: 600;
+    }
     .Swiper2 {margin-top: -500px;}
+
+    .button {display: none;}
     
 /* ================================box1==========================  */
-.contents> h2 { 
-    position: absolute;
-    top:0; left: 0;
-    z-index: 50;
-}
+.contents {margin: 0; height: auto;}
+.contents > div {margin-bottom: 0;}
 .contents .swiper.Swiper2 {
     margin-top: 70px;
-    overflow: hidden;
 }
 .contents .box1 { margin-top: -150px;}
-.contents .swiper.Swiper2 .swiper-wrapper {height: 900px;}
-.contents .swiper.Swiper2 {width: 100vw;}
-.contents .swiper.Swiper2 .swiper-slide2 {width: 500px; height: 830px;}
-.contents .swiper.Swiper2 .swiper-slide2 img {width: 100%; }
+.swiper-wrapper2 {width: 100%; height: 100vh;}
+.Swiper2 {width: 100vw; height: 100%;}
+.Swiper2 .swiper-slide2 {width: 500px; height: 830px;}
+.Swiper2 .swiper-slide2 img {width: 100%; height: 500px ; }
 .contents .box1 .title { 
-    margin-top: -500px; 
-    height: 200px;
+    margin-top: -400px; 
+    height: 150px;
     padding-top: 20px;
 }
-.contents .swiper.Swiper2 .swiper-slide{border: none;}
+.contents .swiper.Swiper2 .swiper-slide{border: none;  height: 700px;}
 .contents .box2 .title a {border: none;}
-.contents .box1 .title p {font-size: 35px; margin-top: 30px;}
+.contents .box1 .title p {font-size: 25px; margin-top: 30px;}
 
 /*============================= box2 =========================*/
     .contents .box2 { 
         position: relative; 
-        height: 650px; width: 100%;
-        margin-top: -150px;
+        width: 100%;
+        margin-top: 200px;
     }
     .contents .box2 img {display: none;}
     .contents .box2 figure img { 
@@ -72,24 +104,24 @@
     }
     .contents .box2 .title { 
         position: absolute; 
-        bottom: -10%; left: 13%; 
+         left: 13%; 
         text-align: left;
     }
     .contents .box2 .title .big {
-        font-size: 40px; 
+        font-size: 30px; 
         margin-bottom: 0.313em; 
         font-weight: 500;
     }
     .contents .box2 .title .small {
-        font-size:30px ; 
+        font-size:20px ; 
         color: rgba(0, 0, 0, 0.4);
         margin-bottom: 0.813em;
         }
     .contents .box2 .title a {
         display: inline-block; 
-        padding: 20px 30px ; 
+        padding: 10px 20px ; 
         border: 1px solid #000; 
-        font-size: 26px;
+        font-size: 20px;
     
     }
     .contents .box2 .title a:hover {
@@ -100,17 +132,17 @@
 /* ============================box3====================== */
 
     .contents .box3 {
+        width: 100%;
+        height: 110vh;
         position: relative; 
-        width: 600px; 
         float: none; 
-        height: auto; 
-        margin-bottom: 1000px;
+        margin-top: 150px;
      }
     .contents .box3 .cont2 {
         position: absolute; 
         top:140px; left: 0;
     }
-    .contents .box3 .cont2 img { padding: 0; width: 620px;}
+    .contents .box3 .cont2 img { padding: 0; width: 100%;}
     .contents .box3 .cont1 { 
         position: absolute; 
         top: 710px; left: 0; 
@@ -128,35 +160,36 @@
     section{
         float: none; 
         width: 100%; 
-        margin: 0;
+        margin-top: 150px;
     }
     section div {
         text-align: center; 
         width: 100%; 
-        margin: 200px 0 80px 0 ;
+        margin: 0 0 80px 0 ;
     } 
-    section .right {margin: 30px 0 0 -20px; }
-    section .left {margin: 230px 0 0 -20px;}
+    section .right {margin: 30px 0 0 0}
+    section .left {margin: 230px 0 0 0 }
     section div .title {margin-top: 0;}
-    section div .title .text {font-size: 40px;}
-    section div .title span {font-size: 25px;}
+    section div .title .text {font-size: 30px;}
+    section div .title span {font-size: 20px;}
     
     section img {width: 100%;}
 
 /* =============================review========================= */
 
-.review {width: 100%; text-align: center; margin: 100px 0;}
+.review {width: 100%; margin: 100px 0;}
+.Swiper3 {width: 100%; height: 120vh;}
 .review .Swiper3 .swiper-button-next {
     right: 20px;
     transform: rotate(90deg);
     color: #000;
   }
+.swiper-backface-hidden .swiper-slide3 {width: 100%;}
 .review .Swiper3 .swiper-button-prev {
     left: 20px;
     transform: rotate(90deg);
     color: #000;
   }
-.Swiper3 {height: 1000px; width: 100%;}
 .Swiper3 .swiper-slide { 
       width: 600px; 
       height: auto;
@@ -187,12 +220,11 @@
 
 
 /* ==========================footer======================== */
-footer {max-width: 640px; overflow: hidden;}
-footer .bottom .list{width: 100%; position: relative;}
+footer {width: 100%; overflow: hidden;}
+footer .bottom .list{width: 100%; position: relative; }
 footer .bottom .list .right { 
     position: absolute; 
-    top: 0; left: 50%;
-    transform: translateX(-50%);
+    top: 0; right: -60%;
     width: 100%;
     
 }
