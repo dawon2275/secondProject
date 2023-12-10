@@ -283,9 +283,40 @@
 <!-- box-3 -->
                 <div class="box3">
                     <h2>설화수 시즌 추천</h2>
-                    <div class="cont clear">
-                        <div class="cont1">
-                            <img src="img/sul06.jpg" alt="">
+                    <ul class="sulProdctList">
+                        <li class="sulProdct">
+                            <a href="https://www.sulwhasoo.com/kr/ko/products/concentrated-ginseng-renewing-serum.html">
+                                <img src="img/sul06.jpg" alt="sulwhasooProducts1">
+                                <div class="title">
+                                    <p class="big">자음생 세럼</p>
+                                    <p class="small">Concentrated Ginseng Renewing Serum EX</p>
+                                    <p class="price">220,000원</p>
+                                </div>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="https://www.sulwhasoo.com/kr/ko/products/concentrated-ginseng-renewing-serum.html">
+                                <img src="img/sulcont2.jpg" alt="sulwhasooProducts1">
+                                <div class="title">
+                                    <p class="big">자음생 듀오</p>
+                                <p class="small">안티에이징의 결정체, 진세노믹스 <br> 자음생듀오로 피부 자생력을 키워주세요.</p>
+                                </div>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="https://www.sulwhasoo.com/kr/ko/products/concentrated-ginseng-renewing-serum.html">
+                                <img src="img/sul05.jpg" alt="sulwhasooProducts1">
+                                <div class="title">
+                                    <p class="big">자음생 크림</p>
+                                    <p class="small">Concentrated Ginseng Renewing Cream EX</p>
+                                    <p class="price">270,000원</p>
+                                </div>
+                            </a>
+                        </li>
+                    </ul>
+                    <!-- <div class="cont clear">
+                        <div class="cont1 clear">
+                            <img src="img/sul06.jpg" alt="sulwhasooProducts1">
                             <div class="title">
                                 <a href="https://www.sulwhasoo.com/kr/ko/products/concentrated-ginseng-renewing-serum.html">
                                     <p class="big">자음생 세럼</p>
@@ -295,14 +326,14 @@
                             </div>
                         </div>
                         <div class="cont2">
-                            <img src="img/sulcont2.jpg" alt="">
+                            <img src="img/sulcont2.jpg" alt="sulwhasooProducts2">
                             <div class="title">
                                 <p class="big">자음생 듀오</p>
                                 <p class="small">안티에이징의 결정체, 진세노믹스 <br> 자음생듀오로 피부 자생력을 키워주세요.</p>
                             </div>
                         </div>
                         <div class="cont1">
-                            <img src="img/sul05.jpg" alt="">
+                            <img src="img/sul05.jpg" alt="sulwhasooProducts3">
                             <a href="https://www.sulwhasoo.com/kr/ko/products/concentrated-ginseng-renewing-cream-ex.html">
                                 <div class="title">
                                     <p class="big">자음생 크림</p>
@@ -312,7 +343,7 @@
                             </a>
                         </div>
                         
-                    </div>
+                    </div> -->
                 </div>
         </div>
 <!-- section -->
@@ -440,10 +471,6 @@
                             </div>
                         </div> 
                     </div>
-                        <div class="button">
-                            <a class="swiper-button-next"></a>
-                            <a class="swiper-button-prev"></a>
-                        </div>
                 </div>
                
             </div>
@@ -531,7 +558,7 @@
         slidesPerView: 3,
         spaceBetween: 10,
         autoplay: {
-        delay: 2500,
+        delay: 2000,
         disableOnInteraction: false,
       },
       loop:true,
@@ -562,24 +589,30 @@
 <script>
     let swiper3 = new Swiper('.Swiper3', {
       slidesPerView: 4,
-      direction: getDirection(),
+      autoplay: {
+        delay: 2500,
+        disableOnInteraction: false,
+      },
+      loop:true,
       navigation: {
         nextEl: '.swiper-button-next',
         prevEl: '.swiper-button-prev',
       },
-      on: {
-        resize: function () {
-          swiper.changeDirection(getDirection());
+      breakpoints: {
+        
+        300: {
+          slidesPerView: 1,  //브라우저가 768보다 클 때
+          spaceBetween: 40,
+        },
+        800: {
+          slidesPerView: 4,  //브라우저가 1024보다 클 때
+          spaceBetween: 50,
         },
       },
+    
+      
     });
 
-    function getDirection() {
-      var windowWidth = window.innerWidth;
-      var direction = window.innerWidth <= 760 ? 'vertical' : 'horizontal';
-
-      return direction;
-    }
   </script>
 
 <script src="js/sulwhasoo.js"></script>

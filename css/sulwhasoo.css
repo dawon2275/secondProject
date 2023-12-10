@@ -284,34 +284,52 @@ header .gnb > ul > li:hover::after {
 }
 
 /* box3 */
-.contents .box3 .cont  { width: 100%;/*  margin-left: 130px; */}
-.contents .box3 .cont > div {float: left; text-align: center;}
-.contents .box3 .cont1 .title { 
-    height: 126px; 
-    background: #efefef; 
-    margin-top: -5px;
+.box3 {width: 100%; height: 50vh;}
+.sulProdctList {width: 100%; height: 100%;}
+.box3 ul li {float: left; width: calc(100%/3);}
+.box3 ul li a {display: block;}
+.box3 ul li:nth-child(2) {position: relative;}
+.box3 ul li:nth-child(2) img {width: 140%; margin-left: -110px;}
+.box3 ul li:nth-child(2) .title {
+    position: absolute;
+    bottom: 10%; left: -10%;
 }
-.contents .box3 .title .big {
-    font-size: 1.188rem; 
-    margin-bottom: 0.313em; 
+.box3 ul li:first-child .title { 
+    margin-right: 170px; 
+    text-align: center;
+}
+.box3 ul li:nth-child(odd) img {width: 70%;}
+.box3 ul li:last-child img,
+.box3 ul li:last-child .title{ margin-left: 170px; text-align: center;}
+.box3 ul li .big {
+    font-size:1.375rem ;
     font-weight: 500;
+    margin: 10px 0 6px 0;
 }
-.contents .box3 .title .small {font-size:0.938rem ; color: rgba(0, 0, 0, 0.4)}
-.contents .box3 .cont1 img{width: 430px;}
-.contents .box3 .cont2 {position: relative;  }
-.contents .box3 .cont2 img {width: 770px; height: 556px; padding: 0 35px; }
-.contents .box3 .cont2 .title {
-    text-align: left; 
-    position: absolute; 
-    top: 70%; left: 10%;
-} 
-.contents .box3 .cont2 .title .big {font-size: 1.375rem;}
+.box3 ul li .small {color: rgba(0, 0, 0, 0.5);}
+
+
 
 /* section */
-section {margin:auto 14.375em;}
-
-section > div {float: left; width: 714px; margin: 0;}
-section .right { margin-left: 15px;}
+section { 
+    width: 100%;
+    height: 70vh;
+}
+section a {
+    width: 100%;
+    display: block;
+}
+section .left {
+    float: left;
+    width: 50%;
+    margin: 0;
+    text-align: center;
+}
+section .right {
+    float: right;
+    width: 50%;
+    text-align: center;
+}
 section > div .title { text-align: center;}
 section > div .title .text {
     font-size: 1.875rem; 
@@ -330,7 +348,10 @@ section > div a > span:hover {
 }
 
 /* review */
-.review {margin:18.750em 14.375em;}
+.review { 
+    width: 100%;
+    margin:7.750em ;
+}
 /* review-swiper3 */
 .Swiper3 {height: 300px;}
 .Swiper3 .swiper-slide { 
@@ -342,13 +363,14 @@ section > div a > span:hover {
     justify-content: center;
     align-items: center;
   }
+.Swiper3 a {display: block;}
 .Swiper3 a img{width: 300px; height: auto; display: block; transition: all .6s;}
 .Swiper3 .review_text{ 
     display: none;
     border: 2px solid #ccc; 
     width: 299px; 
     position: absolute;
-    top: 0; left: 29px; bottom: 0;
+    top: 0; left: 89px; bottom: 0;
     background: rgba(226, 226, 226, 0.5);
     
 }
